@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Cobrança</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="menu"></div>
+      <div class="conteiner">
+        <navbar class="nav-lateral">
+          <div class="user-account">
+            <img src="img/user.png" alt="User" />
+            <div>
+              <h4>Idiko Gaspar</h4>
+              <p href="">@igaspar</p>
+            </div>
+          </div>
+          <div class="nav-items">
+            <a class="active" href="#"
+              ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAB+0lEQVRIie2VvW/TYBDGf/c2FioktANsIKB7BVJY8jdQxqgd7UQECQbaTFAhRtTJyQSiqElGoFv7R3SJEWXnS2yw9CMqSpz6GIiR46ZJHCGx9JFued7H99y9Z/vgDAkgcSKfd6czGfMU1TtAJkGuQ0W3Wy2eb26Wf51qUiq9Ot/tHO0gzAMewpexLZQbQBb4eNjSXNQoFdUd+0erCPOILtVq5XcJugDAcaqLgr7JXJAnwLOQN/3FsAB4kxgA1OvLbxE8Ee5G+VRMN4PwIf6wbVdmRZibCszf6z02gVpW+9P6+uP9mPy7wq0oYRiBQqHy0Ag/BLzABM0wBLyuf+5n0XYfjMox1MS2K7MoFaCJcP9EQFNFqqXS2sywPPHr6q/ABNdQYyn6ul4r1+PnjuP6guS6Xes6sDtRJ0FvBiKig85DPojMKrHJv8L/NzEmUABVHXgdIR/qTsPQwQeB+WYEX5B7hULFOumCDXRSKf/rxCaNxspe0XaXVaSKkhsg8RUeDfgg+zByJhuN8ouU1b6skDWBuR2GQrbdmbpUr6+8HJUj3sk+ypW4qFfp+1HJergqsBclYj9I3QayjlNdHDNhH4q2u4SSBd2K8n1vTT7vTmfSsgPcRPCAzwk85v4YsBvfJwM3YzrNqkEWFC6O6yBwALp10GItvhnPkAi/ATrNvlEBh05FAAAAAElFTkSuQmCC"/>
+              General</a
+            >
+            <a class="pass" href="#"
+              ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABhElEQVRIidWTzUqCQRSGnzPGp4bWDWj7iugCuoEIr8A2nwYWhIK1EFq1bVFBgmA/X626gqI2LeoK+rsDuwNrUWDToilMHRs/CupZDTPnvO85c2bgl5HvAnx/PRZhZFEjWYRJs32vkeNEQtWr1dJzaINcbjMtqFNgyhJyoyKRzP5+6cGmofpV/imuuRVFJhb3krG4lxRFBrgDpl9brZNicSdq0xmyOqvRJfS7eGzYm6nVlh/bjk/z+Y0rtHcNTD81WwWgOlAHaLIAEmGtQxyAIKg0RbMKgDBvLdRqAOMA0ah3aa1BvVyY5UQYgwRAr+o/CIJK0yyTtpiuV7Tgb81qkT0g1ce8Fw3RunBwtHLevtnVgRbZDSEOkDa5X+j1itIAwWH520/YTj63rT9y2+k3gx/h1w2sH60T39+cU6LqAAiFICifueQ5d2DEU0AKTd05zzUwLO4GQgFoYN67a5rzDMydjzkXZPhDVxSSXlfUANLmZw5Ko3OjqwMzwK5AF/FBhv9/eANhjWUjp2DpLAAAAABJRU5ErkJggg==">
+              Password</a
+            >
+            <a class="invitation" href="#"
+              ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAACK0lEQVRIie2VTWsTURSGnzMzhYq7/oB2Jw2CVF2Iq9p/4KK4EIyZyZB016RKUaEiKBakdtKFVEObDhUEG/wFgh8bqYvYhZXWnSjuW9RQdOYeFzE19ssmVXHRZ3e/3ueee4c7sM//hjQ2fD9IGMNllG4Eq+k0xSAsGxPfDMOLy5skfrJwxNg6D0TAK+BbC5tuA44BjlE9EYZDrwGc+mhs6w2BqmKOzsxc+NCCAIBMcqIzss2CLXIdOA38PBKBHlSf7UUAUJwdfI/qU61VBDRUArQj0ut54wOOc3C6WMw2fVyZzL22KPqSRqUX0Hr/xsvtQGUyiqqLrhv0gwq7QsV1g/4oqi6iMgl0NI5ulDwUlTMojkDZcwsvPe92307xnhecTLuF5wJllAMIWUTmtpcoZjrMlT99Xk0gZIEu1HriucHjVCroaZzq+0HC84I5lBcKh0XlktHVQ6VSvojRuHGuwxaUy9e+AsVUKpgTYVhg0BIqrhvct9XcjcUaMDHngDWFUVVuhWFuZbtqt5TUCcP8CnAlmRy/49hyVcAzYp0XMAiPjGE4DPPvdsr4raTO7OzQRyDr+0EhjvWsbcuDqan80m7W7lpS50fwSDNrYPPX9VdolKyBtv+ZWG2v5W2WLCByKpOc6NxLfDo91oVIH0Kl3rd+J1YsI8bW+cg2bzw3qNDiK6yG44AlYq3f3S/PRio11m2JXfufWNhNKwyxCksiMloq5d62sMl9/hHfAX+qz1vV7qfSAAAAAElFTkSuQmCC"/>
+              Invitations</a
+            >
+            <a class="billing" href="#"
+              ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAACgElEQVRIie2UX2jNYRjHP9/399sfm8xy489EIpfKBaXcSJhwo4hD7RxSkmZbiFwcly50sJzItt8RScqNK0mmSCJ/Wlwp5ZRo5QIzzvb7vY8LtmbYxnbhwvfq6X3e5/k89X3eF/7rX5MGgt1b87WlitIDxLQJJRjXw4G4v6o0nYT5oLw8xQnpL1sFLA2HJ5xPLrQVWu5PBCTTkKtGzNWOhtx2c6zHmAKsBm4h3o2z/xezoEWW7EWkQi8y8ixEPAduAmDU/m13QYXBcmfxJftueQhg4kYUNTWMc3oAMpnWmVj8eujZT54M165dZ6vivt79iI3AVIwujx0rFJrvjBXsxgDoRBwyeGxwETHDSZ3p9IltEwKJ494WxCJvWh5FTQ1R1HT4Y8+sJRiXhZ3evTU/Ju+UTuc6gVdBEB71cXIAmUOUSqXgSEW5vy388/aoefvQonT6+GzhijJtQjbHYAGAHNfMwidY/Fpm9YaWIVKDnpj5ahxzMUIzPldX95XH/UGNR2+HTzZ5cln3p54kMZhqUCeY962HfvlbDELa2xufAfVDk5lMrkvG6mw2eyibzcYD570fk3pE4OFpIWo692NN68zBwWUSGnm7nPfHvNydYrHm0s6drQfj+N2bkJq1XpzBuFEo7Hv4u1pzkjNb7KE4ovFthZb7yFLASp/EL51qPntxFXiswLaMVIvRZmgN6Pio76Sjo/lKKnXqemVZssLLagMfdLWdb3z0u/tSf5WZAO4hdzLqaLyrdDrXKazH+SA7GnA0JY4Kye/HWFE5qXxWPr+nByAUfABt8M6vGy9EAEa3zDYPAADCyknlqb5P8cLxAgAo8711de9fDN3E//pjfQULJQLMeLAWkQAAAABJRU5ErkJggg==">
+              Billing</a
+            >
+            <a class="app" href="#"
+              ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABaklEQVRIie2UsUocURSGv3/mRBdtDKxdKl/DJs8QSCMMOHcrJQgGfIeQDRkIQbFwVhBsxDxDmryGld0KSbNhRmbnWGwsbO5MYZpk//Lyf/c7l2GOQl5MgSE94niYTN5P8vxzLlT2YYA7A4bN3F+tN4PfsWa9Uo2VJEMAKRnStmer94OjGDOzas1S3RqA+/zXyeX+LAaE3aJ6eqLq5HL/Z4zJsvE9GEms9FxZSpaSvxcDMLMvIS+aWNFhO3E/B5C7t+J1yIvTDmZxv5yR0GbXNIIbWXoN4OJb0irtwQA+6uo9SzTaLQI9XgLgiV+V5eFNCMWWWr3tp/CpuThzvBT0+CbMgU9y3rTyTPCjgzHBBwNomubg4uKoa0F+9UQCcElq/Xt5fvguxmTZeP2FWfh3/pOl5D+VGICUbuztHK/EijXV4HEbLeKDvZ3jlzFmpmrtUXJnqW7rtO6YR4DnfwRTpI/1ah1dfrYYavoAdRR7GFEfW+oAAAAASUVORK5CYII="/>
+              Apps</a
+            >
+          </div>
+          <div class="logout">
+            <a class="log" href="#"
+              ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAB6UlEQVRIie3VP2gTYRjH8e/zXswiKrjULBati4Po5qKC1MW/WxcdencJpYNK24AgFAk4dLEmlU41aa4dFBwFcZPSgpvioG7iaIsI6lJILu/joEISe3/C4dZnupf3d/e59+W5e2G3BijpHar47kIJUQ8YSrpZYVuUNQuzQTD9PSqX6x78AZaA9whvEt/QcgBh0sBxYDQy14N41dfAvsPDP05WKhWbhAAUvdqsoveNkztar9/6nLgSoIDwLi0AEFrz1DHh6VZLfkZl+pGBa2Xl9ifgalwmM+K61VNGeCJGJhuNqfWdMiYrAu1Nhb1q9UWxWDv3X5AguLO5p2POovpVrb70/fnz/ZnY7SqVakPW6okkKMSCNXOgi6h57roPLwXBzEYqxIY6j3AjCQFA9O9V3hiZA86kQkxOytZqkAqxcgTRRaBlrd7tnopF6vWpLWAr6fnF4oNhxSyBhIi9FjTLG93zmVt4YqJaaLdZF+GgGLnYaJT/aePM3dVuUxAIxcjlqO8k80qazem3wEhcJjMyPv5oxDFhLezk3dXVm992yvRv1xeUY2Njz5y0iON0roNcyed1f1Sm51fvedWSwGOFDyJ8TBR+nyejiK4tL89cSIWAiu8v+Kj1QQ4lGQrbIryylntxJ+NuDVS/AK8epnK0LMbCAAAAAElFTkSuQmCC"/>
+              Logout</a
+            >
+          </div>
+        </navbar>
+        <div class="billing-record">
+          <div class="main-billing">
+            <div class="billing-title">
+              <h1>Billing</h1>
+            </div>
+            <div class="billing-info">
+              <h4>Order History</h4>
+              <p>Manage billing information and view receips</p>
+            </div>
+            <table>
+              <thead>
+                <tr class="table-row">
+                  <td>Date</td>
+                  <td>Type</td>
+                  <td>Receipt</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-row">
+                  <th>Oct. 21, 2021</th>
+                  <th>Pro Annual</th>
+                  <th class="download-button">Download</th>
+                </tr>
+                <tr class="pro-row">
+                  <th>Aug. 21, 2021</th>
+                  <th>Pro Portfolio</th>
+                  <th class="download-button">Download</th>
+                </tr>
+                <tr class="table-row">
+                  <th>July. 21, 2021</th>
+                  <th>Sponsored Post</th>
+                  <th class="download-button">Download</th>
+                </tr>
+                <tr class="table-row">
+                  <th>Jun. 21, 2021</th>
+                  <th>Sponsored Post</th>
+                  <th class="download-button">Download</th>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#" class="load-more">Load more</a>
+            <div class="billing-pay">
+              <h4>Payment Method</h4>
+              <p>Manage billing information and view receips</p>
+            </div>
+            <div class="visa-card">
+              <img src="data:image/png;base64,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">
+              <div class="visa-number"> 
+                <h5>Visa ending in 2255</h5>
+              </div>
+              <div>
+                <a class="remove-button">Remove</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-plan">
+            <a class="plan">Your plan</a>
+            <h3>Pro Annual</h3>
+            <p>Renews on Nov, 2021</p>
+            <a class="cancel-button">Cancel Subscription</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
